@@ -6,17 +6,19 @@
     <title>Memory Game</title>
     <link rel="stylesheet" href="src/styles/reset.css" />
     <link rel="stylesheet" href="src/styles/main.css" />
-
   </head>
   <body>
     <div class="container">
-      <h2>Memory Game</h2>
+      <div class="game-info">
+        <h2>Memory Game</h2>
+        <div class="timer">Tempo: <span id="time">0</span>s</div>
+        <div class="moves">Jogadas: <span id="moves">0</span></div>
+      </div>
       <div class="game"></div>
-      <button class="reset" onclick="window.location.reload()">
+      <button class="reset" onclick="resetGame()">
         Reset Game
       </button>
     </div>
-
     <script defer src="src/scripts/engine.js"></script>
   </body>
 </html>
